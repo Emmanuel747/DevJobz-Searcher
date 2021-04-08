@@ -1,1 +1,1 @@
-console.log("Hello, world!");
+console.log("I'm done, time to to job search")
