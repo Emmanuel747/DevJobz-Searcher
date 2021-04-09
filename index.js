@@ -11,7 +11,7 @@ const cowsay = require('cowsay');
 const Quote = require('inspirational-quotes');
 
 server.listen(PORT, () => {
-  // stuff
+  console.log('Server is up...');
 });
 
 // server.listen(3000, () => {
