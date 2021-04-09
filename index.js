@@ -5,13 +5,17 @@ app.listen(3000, () => {
    console.log(`App 🦵🏿 on 4`)
 });
 
-app.get('/', (req, res) => {
-   console.log('My Request Object', req);
-   console.log('My Response Object', res);
-   res.send("Hello World, again.");
-})
-
-console.log("I'm almost done, time to job search")
-console.log("please wnfvbnmvgbnork")
-
-
+server.get('/hello', (req, res, next) => {
+   res.send(`
+   <html>
+   <head></head>
+   <body>
+     <h3>Hello!</h3>
+   </body>
+   </html>
+   `)
+ });
+ 
+ server.listen(3000, () => {
+   console.log('I am listening...');
+ });
