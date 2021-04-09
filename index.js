@@ -6,10 +6,12 @@ app.listen(3000, () => {
 });
 
 app.get('/', (req, res) => {
-   console.log('My Request Object', req)
-   console.log('My Response Object', res)
-   res.send("Hello World, again")
+   console.log('My Request Object', req);
+   console.log('My Response Object', res);
+   res.send("Hello World, again.");
 })
 
 console.log("I'm almost done, time to job search")
+
+
 
