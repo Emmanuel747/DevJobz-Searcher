@@ -6,17 +6,15 @@ const express = require("express");
 const server = express();
 const axios = require('axios');
 const morgan = require('morgan');
-const bodyParser = require('body-parser');
 const cowsay = require('cowsay');
 const Quote = require('inspirational-quotes');
+
+
+const bodyParser = require('body-parser');
 
 server.listen(PORT, () => {
   console.log('Server is up...');
 });
-
-// server.listen(3000, () => {
-//    console.log('Server is up...');
-//  });
 
 server.use(express.static('public'));
 
@@ -24,9 +22,9 @@ server.get('/hello', (req, res, next) => {
   res.send(`
   <html>
    <head> </head>
-   <body>
+    <body>
       <h3>Hello!</h3>
-   </body>
+    </body>
   </html>
   `)
 });
