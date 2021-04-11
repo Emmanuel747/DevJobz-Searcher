@@ -40,7 +40,7 @@ html {
   font-family: 'Libre Baskerville', serif;
   letter-spacing: 0.15rem;
   text-decoration: overline;
-  border-bottom: 2px solid #ededed;
+  border-bottom: 4px double rgb(238 184 68);
   font-style: italic;
 }
 
@@ -61,6 +61,7 @@ html {
   background: coral;
   font-size: 1em;
   margin-right: .5em;
+  box-shadow:2px 2px 3px #0b0b0b;
 }
 
 #fulltime-label::after {
@@ -94,7 +95,10 @@ html {
   margin-left: .5em;
   border-radius: 10px;
 }
-
+#job-search button:hover {
+  background-color: #5099cace;
+  box-shadow:2px 2px 3px #0b0b0b;
+}
 #job-search button:active {
   background-color: #811b42ce;
   box-shadow: 0 5px #666;
