@@ -20,7 +20,6 @@ async function fetchJobs () {
     console.log(error)
   }
 }
-fetchJobs ();
 
 const renderJobsHTML = job => {
   return $(`

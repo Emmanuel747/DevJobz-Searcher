@@ -1,12 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
 * {
   border: 0;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  
 }
 
 html {
@@ -34,9 +33,15 @@ html {
 
 #app-name {
   font-size: 2em;
-  color: white;
+  color: #0b0b0b;
+  text-shadow: 1px 2px 4px #e7e1e1;
   font-family: monospace;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: 'Libre Baskerville', serif;
+  letter-spacing: 0.15rem;
+  text-decoration: overline;
+  border-bottom: 2px solid #ededed;
+  font-style: italic;
 }
 
 #job-search {
@@ -59,7 +64,7 @@ html {
 }
 
 #fulltime-label::after {
-  content: " [X]"
+  content: " [No]"
 }
 
 #fulltime:checked + #fulltime-label {
@@ -67,7 +72,7 @@ html {
 }
 
 #fulltime:checked + #fulltime-label::after {
-  content: " [✓]"
+  content: " [Yes]"
 }
 
 #job-search input,
@@ -87,6 +92,13 @@ html {
 
 #job-search button {
   margin-left: .5em;
+  border-radius: 10px;
+}
+
+#job-search button:active {
+  background-color: #811b42ce;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 #app > main {
@@ -170,16 +182,3 @@ html {
   background-color: rgba(128, 128, 128, 0.233);
 }
 
-.card-company {
-  
-}
-/* .description {
-  overflow: auto;
-  text-overflow: ellipsis;
-  line-clamp: 5;
-  background-color: rgba(128, 128, 128, 0.233);
-  margin: 5px 0px 5px 0px;
-  max-height: 50%
-} */
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
