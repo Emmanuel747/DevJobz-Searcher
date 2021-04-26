@@ -25,7 +25,7 @@ const renderJobsHTML = job => {
   return $(`
         <div class="card-container" style="width: ;">
         <div class="card-body">
-          <img src="${job.company_logo ? job.company_logo : ''}" height=""/>
+          <img src="${job.company_logo === null ? job.company_logo : ''}" height=""/>
           <h2 class="card-company">${job.company}</h2>
           <i><p class="card-location">${job.location}</p></i>
           <b><p class="list-item">Title: ${job.title}</p></b>
